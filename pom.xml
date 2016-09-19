@@ -182,6 +182,15 @@
                         </image>
                     </images>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>fabric8</id>
+                        <goals>
+                            <goal>resource</goal>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
