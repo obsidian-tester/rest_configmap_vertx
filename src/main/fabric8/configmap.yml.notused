@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: 2016-09-19T12:38:27Z
+  name: app-config
+  namespace: vertx-demo
+data:
+  app.json: |-
+    {
+        "logging": "debug",
+        "hostname": "127.0.0.1",
+        "port": 8080
+    }
