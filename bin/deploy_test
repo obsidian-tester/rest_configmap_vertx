@@ -26,7 +26,7 @@ echo "Remove old docker image"
 docker rmi -f vertx-demo/simple-config-map:1.0.0-SNAPSHOT
 
 echo "Create the docker image, kubernetes/openshift config file and deploy the pod"
-mvn clean compile fabric8:build fabric8:run
+mvn clean fabric8:run
 
 sleep 10s
 
