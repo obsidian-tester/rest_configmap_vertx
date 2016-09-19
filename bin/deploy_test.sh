@@ -1,14 +1,12 @@
+#!/bin/bash
 
-echo "## Start Openshift, create application for vertx-demo & log on to OpenShift"
-./bin/start_minishift_log
-
-# echo "Delete service, replication controller & Deployment Config"
-# oc delete service simple-vertx-configmap
-# oc delete rc simple-config-map
-# oc delete dc simple-config-map
+echo "Delete Service, Replication Controller & Deployment Config"
+oc delete service simple-vertx-configmap
+oc delete rc simple-config-map
+oc delete dc simple-config-map
 
 echo "## Create the configMap"
-# oc delete configmap/app-config
+oc delete configmap/app-config
 oc create configmap app-config --from-file=src/main/resources/app.json
 
 echo "## Remove old docker image"

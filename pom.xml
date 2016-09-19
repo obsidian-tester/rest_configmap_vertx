@@ -19,6 +19,7 @@
         <slf4j.version>1.7.21</slf4j.version>
 
         <fabric8.version>2.2.158</fabric8.version>
+        <!-- With version 3.1.45 it is possible to create/luanch the pod & stp ti using ctrl-c -->
         <fabric8.maven.plugin.version>3.1.42</fabric8.maven.plugin.version>
 
         <vertx.version>3.3.3</vertx.version>

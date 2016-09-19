@@ -71,6 +71,7 @@ export KUBERNETES_MASTER=https://$(minishift ip):8443
 ```    
 oc login $(minishift ip):8443 -u admin -p admin
 ```    
+
 # Create a new project
 
 ```    
@@ -94,7 +95,7 @@ oc get configmap/app-config -o yaml
 * Build and deploy the project
    
 ```
-mvn -Popenshift   
+bin/deploy_test   
 ```
 
 # Consult the Service deployed 
