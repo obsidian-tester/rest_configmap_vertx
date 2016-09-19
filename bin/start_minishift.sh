@@ -3,9 +3,9 @@
 status=$(minishift status)
 
 if [ $status = "Running" ]; then
-   echo "## Minishift is already running. We will log on to openshift"
+   echo "## Minishift is already running."
 else
-  echo "## Start Minishift and log on to OpenShift"
+  echo "## Start Minishift"
   minishift start
 fi
 
