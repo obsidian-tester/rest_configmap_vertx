@@ -18,5 +18,5 @@ mvn clean fabric8:run
 sleep 5s
 
 echo "## Call REST endpoint"
-export service=$(minishift service simple-vertx-configmap -n vertx-demo --url=true)
+export service=$(minishift service simple-config-map -n vertx-demo --url=true)
 http $service/products
