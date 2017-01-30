@@ -24,7 +24,7 @@
   </parent>
   <groupId>org.obsidiantoaster.quickstart</groupId>
   <artifactId>vertx-configmap-rest</artifactId>
-  <version>1.0.0.Dummy</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>rest-configmap</name>
